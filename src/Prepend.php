@@ -33,10 +33,10 @@ class Prepend extends Process
                 (new Status(My::POST_DRAFT , My::id() . 'draft', 'Draft', 'Draft (>1)', My::fileURL('img/draft.svg'))),
             )
              && App::status()->post()->set(
-                (new Status(My::POST_REVIEW , My::id() . 'toproofread', 'To proofread', 'To proofread (>1)', My::fileURL('img/toproofread.svg'))),
+                (new Status(My::POST_PROOFREAD , My::id() . 'proofread', 'To proofread', 'To proofread (>1)', My::fileURL('img/proofread.svg'))),
             )
              && App::status()->post()->set(
-                (new Status(My::POST_READY , My::id() . 'fulfiled', 'Fulfilled', 'Fulfilled (>1)', My::fileURL('img/fulfilled.svg'))),
+                (new Status(My::POST_READY , My::id() . 'ready', 'Fulfilled', 'Fulfilled (>1)', My::fileURL('img/ready.svg'))),
             );
 
     }

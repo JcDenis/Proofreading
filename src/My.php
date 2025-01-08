@@ -21,7 +21,7 @@ use Dotclear\Module\MyPlugin;
  */
 class My extends MyPlugin
 {
-    public const POST_READY  = -100;
-    public const POST_REVIEW = -110;
-    public const POST_DRAFT  = -120;
+    public const POST_READY     = -100;
+    public const POST_PROOFREAD = -110;
+    public const POST_DRAFT     = -120;
 }
