@@ -9,3 +9,9 @@ Proofreading 0.2 - 2025.01.08
 * Require Dotclear 2.33
 * Require PHP 8.1
 * Use better status id
+
+Proofreading 0.3 - 2025.01.09
+===========================================================
+* Require Dotclear 2.33
+* Require PHP 8.1
+* Add 1 post status and 1 user permission
