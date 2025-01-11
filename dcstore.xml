@@ -2,10 +2,10 @@
 <modules xmlns:da="http://dotaddict.org/da/">
   <module id="Proofreading">
     <name>Proofreading</name>
-    <version>0.4</version>
+    <version>0.5</version>
     <author>Jean-Christian Paul Denis and contributors</author>
     <desc>Add proofreading statuses for your posts.</desc>
-    <file>https://github.com/JcDenis/Proofreading/releases/download/v0.4/plugin-Proofreading.zip</file>
+    <file>https://github.com/JcDenis/Proofreading/releases/download/v0.5/plugin-Proofreading.zip</file>
     <da:dcmin>2.33</da:dcmin>
     <da:details>https://git.dotclear.watch/JcDenis/Proofreading/src/branch/master/README.md</da:details>
     <da:support>https://git.dotclear.watch/JcDenis/Proofreading/issues</da:support>
