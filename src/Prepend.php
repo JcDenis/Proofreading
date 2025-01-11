@@ -29,25 +29,29 @@ class Prepend extends Process
             return false;
         }
 
-        // subscirber permission
+        // Add "Posts subscriber" user permission
         App::auth()->setPermissionType(My::PERMISSION_SUBSCRIBER, __('Posts subscriber'));
 
-        // posts status
+        // Add post status
         $status = 
+            // Add "Draft" post status, used on backend only.
             App::status()->post()->set(
                 (new Status(My::POST_DRAFT , My::id() . 'draft', 'Draft', 'Draft (>1)', My::fileURL('img/draft.svg'))),
             )
+            // Add "To proofread" post status, used on backend only.
              && App::status()->post()->set(
                 (new Status(My::POST_PROOFREAD , My::id() . 'proofread', 'To proofread', 'To proofread (>1)', My::fileURL('img/proofread.svg'))),
             )
+            // Add "Fulfilled" post status, used on backend only.
              && App::status()->post()->set(
                 (new Status(My::POST_READY , My::id() . 'ready', 'Fulfilled', 'Fulfilled (>1)', My::fileURL('img/ready.svg'))),
             )
+            // Add "Subscription" post status on backend and frontend.
              && App::status()->post()->set(
                 (new Status(My::POST_SUBSCRIBED , My::id() . 'subscriber', 'Subscription', 'Subscription (>1)', My::fileURL('img/subscriber.svg'))),
             );
 
-        // tweak frontend
+        // Tweak frontend post related queries
         if ($status) {
             App::behavior()->addBehaviors([
                 'coreBlogBeforeGetPostsAddingParameters' => self::coreBlogBeforeGetPostsAddingParameters(...),
@@ -58,7 +62,12 @@ class Prepend extends Process
     }
 
     /**
-     * @param   array<string, mixed>|ArrayObject<string, mixed>     $params     Parameters
+     * Add subscriber post status.
+     * 
+     * This adds post marked with status subscriber 
+     * to Frontend if user is loggued and has subscriber right.
+     *
+     * @param   ArrayObject<string, mixed>     $params     Parameters
      */
     public static function coreBlogBeforeGetPostsAddingParameters(ArrayObject $params, string|null $arg = null): void
     {
