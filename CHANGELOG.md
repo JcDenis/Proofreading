@@ -21,3 +21,9 @@ Proofreading 0.4 - 2025.01.11
 * Require Dotclear 2.33
 * Require PHP 8.1
 * Change status levels
+
+Proofreading 0.5 - 2025.01.11
+===========================================================
+* Require Dotclear 2.33
+* Require PHP 8.1
+* Remove subscriber stuff (now to plugin RestrictedReading)
