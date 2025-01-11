@@ -50,7 +50,7 @@ class Prepend extends Process
         // tweak frontend
         if ($status) {
             App::behavior()->addBehaviors([
-                'coreBlogBeforeGetPostsAddingParameters' => self::getPosts(...),
+                'coreBlogBeforeGetPostsAddingParameters' => self::coreBlogBeforeGetPostsAddingParameters(...),
             ]);
         }
 
@@ -60,10 +60,10 @@ class Prepend extends Process
     /**
      * @param   array<string, mixed>|ArrayObject<string, mixed>     $params     Parameters
      */
-    public static function getPosts(ArrayObject $params, string|null $arg = null): void
+    public static function coreBlogBeforeGetPostsAddingParameters(ArrayObject $params, string|null $arg = null): void
     {
         if (App::task()->checkContext('FRONTEND') && App::auth()->check(My::PERMISSION_SUBSCRIBER, App::blog()->id()) === true) {
-            if (!isset($params['psot_status'])) {
+            if (!isset($params['post_status'])) {
                 $params['post_status'] = [];
             }
             if (!is_array($params['post_status'])) {
