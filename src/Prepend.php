@@ -29,11 +29,8 @@ class Prepend extends Process
             return false;
         }
 
-        // Add "Posts subscriber" user permission
-        App::auth()->setPermissionType(My::PERMISSION_SUBSCRIBER, __('Posts subscriber'));
-
         // Add post status
-        $status = 
+        return
             // Add "Draft" post status, used on backend only.
             App::status()->post()->set(
                 (new Status(My::POST_DRAFT , My::id() . 'draft', 'Draft', 'Draft (>1)', My::fileURL('img/draft.svg'))),
@@ -45,42 +42,6 @@ class Prepend extends Process
             // Add "Fulfilled" post status, used on backend only.
              && App::status()->post()->set(
                 (new Status(My::POST_READY , My::id() . 'ready', 'Fulfilled', 'Fulfilled (>1)', My::fileURL('img/ready.svg'))),
-            )
-            // Add "Subscription" post status on backend and frontend.
-             && App::status()->post()->set(
-                (new Status(My::POST_SUBSCRIBED , My::id() . 'subscriber', 'Subscription', 'Subscription (>1)', My::fileURL('img/subscriber.svg'))),
             );
-
-        // Tweak frontend post related queries
-        if ($status) {
-            App::behavior()->addBehaviors([
-                'coreBlogBeforeGetPostsAddingParameters' => self::coreBlogBeforeGetPostsAddingParameters(...),
-            ]);
-        }
-
-        return $status;
-    }
-
-    /**
-     * Add subscriber post status.
-     * 
-     * This adds post marked with status subscriber 
-     * to Frontend if user is loggued and has subscriber right.
-     *
-     * @param   ArrayObject<string, mixed>     $params     Parameters
-     */
-    public static function coreBlogBeforeGetPostsAddingParameters(ArrayObject $params, string|null $arg = null): void
-    {
-        if (App::task()->checkContext('FRONTEND') && App::auth()->check(My::PERMISSION_SUBSCRIBER, App::blog()->id()) === true) {
-            if (!isset($params['post_status'])) {
-                $params['post_status'] = [];
-            }
-            if (!is_array($params['post_status'])) {
-                $params['post_status'] = [$params['post_status']];
-            }
-
-            //$params['post_status'][] = App::status()->post()::PUBLISHED;
-            $params['post_status'][] = My::POST_SUBSCRIBED;
-        }
     }
 }

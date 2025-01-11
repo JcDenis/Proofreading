@@ -21,8 +21,6 @@ use Dotclear\Module\MyPlugin;
  */
 class My extends MyPlugin
 {
-    public const PERMISSION_SUBSCRIBER = 'subscriber';
-    public const POST_SUBSCRIBED       = -110;
     public const POST_READY            = -111;
     public const POST_PROOFREAD        = -112;
     public const POST_DRAFT            = -113;
