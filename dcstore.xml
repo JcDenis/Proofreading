@@ -7,7 +7,7 @@
     <desc>Add proofreading statuses for your posts.</desc>
     <file>https://github.com/JcDenis/Proofreading/releases/download/v0.5/plugin-Proofreading.zip</file>
     <da:dcmin>2.33</da:dcmin>
-    <da:details>https://git.dotclear.watch/JcDenis/Proofreading/src/branch/master/README.md</da:details>
-    <da:support>https://git.dotclear.watch/JcDenis/Proofreading/issues</da:support>
+    <da:details>https://github.com/JcDenis/Proofreading/src/branch/master/README.md</da:details>
+    <da:support>https://github.com/JcDenis/Proofreading/issues</da:support>
   </module>
 </modules>
