@@ -27,3 +27,9 @@ Proofreading 0.5 - 2025.01.11
 * Require Dotclear 2.33
 * Require PHP 8.1
 * Remove subscriber stuff (now to plugin RestrictedReading)
+
+Proofreading 0.5.1 - 2025.03.02
+===========================================================
+* Require Dotclear 2.33
+* Require PHP 8.1
+* Fix repository URLs
