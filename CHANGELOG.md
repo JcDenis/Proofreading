@@ -1,10 +1,15 @@
-Proofreading 0.1 - 2025.01.08
+Proofreading 0.6 - 2025.09.09
+===========================================================
+* Bump Dotclear from 2.33 to 2.36
+* Use TraitProcess
+
+Proofreading 0.5 - 2025.01.08
 ===========================================================
 * Require Dotclear 2.33
 * Require PHP 8.1
 * Add 3 status to posts
 
-Proofreading 0.2 - 2025.01.08
+Proofreading 0.4 - 2025.01.08
 ===========================================================
 * Require Dotclear 2.33
 * Require PHP 8.1
