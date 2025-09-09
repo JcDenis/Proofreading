@@ -6,7 +6,7 @@ namespace Dotclear\Plugin\Proofreading;
 use ArrayObject;
 use Dotclear\App;
 use Dotclear\Core\PostType;
-use Dotclear\Core\Process;
+use Dotclear\Helper\Process\TraitProcess;
 use Dotclear\Helper\Stack\Status;
 
 /**
@@ -16,8 +16,10 @@ use Dotclear\Helper\Stack\Status;
  * @author      Jean-Christian Denis (latest)
  * @copyright   GPL-3.0
  */
-class Prepend extends Process
+class Prepend
 {
+    use TraitProcess;
+
     public static function init(): bool
     {
         return self::status(My::checkContext(My::PREPEND));
