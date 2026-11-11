@@ -21,7 +21,7 @@ $this->registerModule(
     'Proofreading',
     'Add proofreading statuses for your posts',
     'Jean-Christian Denis and Contributors',
-    '0.7',
+    '0.8',
     [
         'requires'    => [['core', '2.40']],
         'permissions' => 'My',
