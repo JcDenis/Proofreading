@@ -33,15 +33,15 @@ class Prepend
         return
             // Add "Draft" post status, used on backend only.
             App::status()->post()->set(
-                (new Status(My::POST_DRAFT, My::id() . 'draft', 'Draft', 'Draft (>1)', My::fileURL('img/draft.svg'))),
+                (new Status(My::POST_DRAFT, My::id() . 'draft', 'Draft', 'Draft (>1)', My::statusIcon('img/draft.svg'))),
             )
             // Add "To proofread" post status, used on backend only.
             && App::status()->post()->set(
-                (new Status(My::POST_PROOFREAD, My::id() . 'proofread', 'To proofread', 'To proofread (>1)', My::fileURL('img/proofread.svg'))),
+                (new Status(My::POST_PROOFREAD, My::id() . 'proofread', 'To proofread', 'To proofread (>1)', My::statusIcon('img/proofread.svg'))),
             )
             // Add "Fulfilled" post status, used on backend only.
             && App::status()->post()->set(
-                (new Status(My::POST_READY, My::id() . 'ready', 'Fulfilled', 'Fulfilled (>1)', My::fileURL('img/ready.svg'))),
+                (new Status(My::POST_READY, My::id() . 'ready', 'Fulfilled', 'Fulfilled (>1)', My::statusIcon('img/ready.svg'))),
             );
     }
 }
