@@ -12,6 +12,8 @@ _Proofreading_ is a plugin for the open-source web publishing software called [D
 
 > Add proofreading statuses for your posts.
 
+A [user guide in French](https://github.com/JcDenis/Proofreading/blob/master/docs/fr/utilisation.md) is available.
+
 ## REQUIREMENTS
 
 * Dotclear 2.40
@@ -26,6 +28,7 @@ Once installed it adds 3 new offline status to posts.
 
 ## LINKS
 
+* [User guide (in French)](https://github.com/JcDenis/Proofreading/blob/master/docs/fr/utilisation.md)
 * [License](https://github.com/JcDenis/Proofreading/blob/master/LICENSE)
 * [Packages & details](https://github.com/JcDenis/Proofreading/releases) (or on [Repository](https://dotclear.org/plugin/detail/Proofreading))
 * [Sources & contributions](https://github.com/JcDenis/Proofreading)
