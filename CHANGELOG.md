@@ -1,3 +1,8 @@
+Proofreading 0.9 - 2026.11.15
+===========================================================
+* [lang] Fix accent in French translation
+* [docs] Add a user guide in French, with screenshots
+
 Proofreading 0.8 - 2026.11.11
 ===========================================================
 * Fix DA URLs

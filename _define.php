@@ -21,7 +21,7 @@ $this->registerModule(
     'Proofreading',
     'Add proofreading statuses for your posts',
     'Jean-Christian Denis and Contributors',
-    '0.8',
+    '0.9',
     [
         'requires'    => [['core', '2.40']],
         'permissions' => 'My',
@@ -29,6 +29,6 @@ $this->registerModule(
         'support'     => 'https://github.com/JcDenis/' . $this->id . '/issues',
         'details'     => 'https://github.com/JcDenis/' . $this->id . '/',
         'repository'  => 'https://raw.githubusercontent.com/JcDenis/' . $this->id . '/master/dcstore.xml',
-        'date'        => '2026-11-11T09:14:11+00:00',
+        'date'        => '2026-11-15T13:46:39+00:00',
     ]
 );
