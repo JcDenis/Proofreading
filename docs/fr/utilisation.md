@@ -1,6 +1,6 @@
 # Proofreading : guide d'utilisation
 
-Proofreading ajoute trois états de relecture à vos billets : « Brouillon », « A relire » et « Traité ». Ces états servent à suivre l'avancement d'un billet avant sa publication. Un billet qui porte l'un de ces états n'est pas visible sur le blog.
+Proofreading ajoute trois états de relecture à vos billets : « Brouillon », « À relire » et « Traité ». Ces états servent à suivre l'avancement d'un billet avant sa publication. Un billet qui porte l'un de ces états n'est pas visible sur le blog.
 
 ## Sommaire
 
@@ -15,7 +15,7 @@ Proofreading ajoute trois états de relecture à vos billets : « Brouillon », 
 Une fois le plugin installé, la liste des états de Dotclear s'allonge de trois choix :
 
 * « Brouillon » : le billet est en cours d'écriture.
-* « A relire » : le billet est prêt pour une relecture.
+* « À relire » : le billet est prêt pour une relecture.
 * « Traité » : la relecture est faite.
 
 Chaque état a sa propre icône dans la liste des billets.
@@ -40,7 +40,7 @@ Dotclear confirme par le message « L'article … a été mis à jour avec succ�
 3. Dans la liste d'actions en bas, choisissez un état dans le groupe « État ».
 4. Validez.
 
-Dotclear affiche alors un message du type « Les entrées ont été mises à jour avec succès et ont désormais le statut «A relire». ».
+Dotclear affiche alors un message du type « Les entrées ont été mises à jour avec succès et ont désormais le statut «À relire». ».
 
 ## Retrouver les billets par état
 
@@ -52,7 +52,6 @@ Le titre de la liste indique aussi le nombre de billets pour chaque état.
 
 ## Bon à savoir
 
-* Les billets « Brouillon », « A relire » et « Traité » n'apparaissent ni sur la page d'accueil, ni à leur adresse publique : elle renvoie une erreur 404.
+* Les billets « Brouillon », « À relire » et « Traité » n'apparaissent ni sur la page d'accueil, ni à leur adresse publique : elle renvoie une erreur 404.
 * Pour publier un billet, choisissez simplement l'état « Publié ».
 * Le plugin ne gère ni relecteur, ni commentaire de relecture, ni notification : c'est uniquement un état.
-* Le nom « A relire » s'affiche sans accent sur le « A », dans la liste d'état comme dans les messages.
