@@ -17,8 +17,8 @@ msgstr[1] "Brouillons"
 
 msgid "To proofread"
 msgid_plural "To proofread (>1)"
-msgstr[0] "A relire"
-msgstr[1] "A relire"
+msgstr[0] "À relire"
+msgstr[1] "À relire"
 
 msgid "Fulfilled"
 msgid_plural "Fulfilled (>1)"
