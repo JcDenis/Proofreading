@@ -19,7 +19,7 @@ Required Dotclear and PHP versions: see `_define.php`.
 
 * `src/My.php`: module helpers (`My::id()`, settings, permissions).
 * `src/Prepend.php`: loaded on every request: the three post statuses.
-* `src/Frontend.php`: gives the statuses to the plugin ClaudetteMcp (behavior `ClaudetteMcpAddPostStatus`, ClaudetteMcp 0.5+), never required.
+* `src/Frontend.php`: gives the statuses to the plugin ClaudetteMcp (behavior `ClaudetteMcpAddPostStatus`, ClaudetteMcp 0.5+), optional dependency `ClaudetteMcp?` in `requires`.
 
 ## Pitfalls
 
