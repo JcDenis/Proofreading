@@ -1,3 +1,7 @@
+Proofreading 0.9.1 - 2026.11.23
+===========================================================
+* [new] Give proofreading statuses to an AI assistant connected with ClaudetteMcp
+
 Proofreading 0.9 - 2026.11.15
 ===========================================================
 * [lang] Fix accent in French translation
