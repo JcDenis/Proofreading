@@ -8,6 +8,7 @@ Proofreading ajoute trois états de relecture à vos billets : « Brouillon », 
 * [Changer l'état d'un billet](#changer-létat-dun-billet)
 * [Changer l'état de plusieurs billets](#changer-létat-de-plusieurs-billets)
 * [Retrouver les billets par état](#retrouver-les-billets-par-état)
+* [Avec un assistant IA](#avec-un-assistant-ia)
 * [Bon à savoir](#bon-à-savoir)
 
 ## Les trois états
@@ -49,6 +50,16 @@ Dans la liste des billets, le filtre « État » propose les trois nouveaux éta
 Le titre de la liste indique aussi le nombre de billets pour chaque état.
 
 ![Liste des billets avec les trois états](img/liste-billets.png)
+
+## Avec un assistant IA
+
+Avec le plugin [ClaudetteMcp](https://github.com/JcDenis/ClaudetteMcp), un assistant IA connecté au blog connaît les trois états :
+
+* il liste les billets d'un état avec l'outil `list_posts` (états `draft`, `to_proofread` et `proofread`) ;
+* il change l'état d'un billet avec l'outil `set_post_status`, si vous avez la permission de publier.
+
+Vous pouvez par exemple lui demander de relire les billets « À relire », puis de les passer en « Traité ».
+_ClaudetteMcp_ n'est pas nécessaire au fonctionnement de _Proofreading_.
 
 ## Bon à savoir
 
