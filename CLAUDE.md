@@ -11,14 +11,15 @@ The rules below take precedence for this module.
 
 Add proofreading statuses for your posts.
 
-No admin page. Nothing on the public side.
+No admin page. Public side: only the statuses given to ClaudetteMcp.
 
 Required Dotclear and PHP versions: see `_define.php`.
 
 ## Structure
 
 * `src/My.php`: module helpers (`My::id()`, settings, permissions).
-* `src/Prepend.php`: loaded on every request: autoload, URL handlers, permission types.
+* `src/Prepend.php`: loaded on every request: the three post statuses.
+* `src/Frontend.php`: gives the statuses to the plugin ClaudetteMcp (behavior `ClaudetteMcpAddPostStatus`, ClaudetteMcp 0.5+), never required.
 
 ## Pitfalls
 
