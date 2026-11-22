@@ -26,7 +26,7 @@ Dotclear plugins repository. (See Dotclear's documentation to know how do this)
 
 Once installed it adds 3 new offline status to posts.
 
-With the plugin [ClaudetteMcp](https://github.com/JcDenis/ClaudetteMcp), an AI assistant connected to the blog
+With the plugin [ClaudetteMcp](https://github.com/JcDenis/ClaudetteMcp) (0.5 or later), an AI assistant connected to the blog
 knows these statuses: it can list the posts by status and change the status of a post (`draft`, `to_proofread`, `proofread`)
 with its tools `list_posts` and `set_post_status`, with the permission to publish. ClaudetteMcp is not required by _Proofreading_.
 

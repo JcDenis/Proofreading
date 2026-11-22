@@ -53,7 +53,7 @@ Le titre de la liste indique aussi le nombre de billets pour chaque état.
 
 ## Avec un assistant IA
 
-Avec le plugin [ClaudetteMcp](https://github.com/JcDenis/ClaudetteMcp), un assistant IA connecté au blog connaît les trois états :
+Avec le plugin [ClaudetteMcp](https://github.com/JcDenis/ClaudetteMcp) (version 0.5 ou plus récente), un assistant IA connecté au blog connaît les trois états :
 
 * il liste les billets d'un état avec l'outil `list_posts` (états `draft`, `to_proofread` et `proofread`) ;
 * il change l'état d'un billet avec l'outil `set_post_status`, si vous avez la permission de publier.
